@@ -1,0 +1,27 @@
+
+<h1>WORD COUNT</h1>
+
+This is HTML!
+
+<form action="{% url 'count' %}">
+
+    <!-- baraye ijad kardan yek faza baraye neveshtan text -->
+    <textarea cols="50
+" rows="20" name="fulltext"></textarea>
+
+    <!--baraye fasele dadn-->
+    <br>
+
+    <!--baraye ezafe kardan click-->
+    <input type="submit" value="Count!" />
+</form>
+
+
+ <!-- 2 ravash baraye sakhtan link baraye safheye about.html  -->
+ <!--  ravesh 1  (basakhtan bottom) -->
+<form action="{% url 'about' %}">
+    <input type="submit" value="About">
+</form>
+
+ <!--  ravesh 2 (ba gozoshtan link ) -->
+<a href="{% url 'about' %}"> About - ravesh 2</a>
